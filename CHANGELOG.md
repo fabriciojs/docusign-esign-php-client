@@ -3,6 +3,14 @@ All notable changes to this project will be documented in this file.
 
 See [DocuSign Support Center](https://support.docusign.com/en/releasenotes/) for Product Release Notes.
 
+## [Unreleased]
+### Security
+- Updated firebase/php-jwt dependency from ^6.0 to ^7.0 to address security vulnerability CVE-2025-45769 (inadequate encryption strength).
+
+### Important Notes for Users
+- firebase/php-jwt v7.0 enforces stricter cryptographic key size requirements. If you are using JWT authentication with this SDK, ensure your RSA private keys meet the minimum security requirements (typically 2048 bits or higher for RSA). Keys with inadequate length will cause JWT generation to fail.
+- This update improves security by preventing the use of weak cryptographic keys.
+
 ## [v8.7.0] - eSignature API v2.1-25.4.01.00 - 2026-01-19
 ### Changed
 - Added support for version v2.1-25.4.01.00 of the DocuSign ESignature API.

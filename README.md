@@ -70,7 +70,7 @@ This client has the following external dependencies:
 *   [PHP cURL extension](https://www.php.net/manual/en/intro.curl.php)
 *   [PHP JSON extension](https://php.net/manual/en/book.json.php)
 *   [PHP MBString extension](https://www.php.net/manual/en/intro.mbstring.php)
-*   firebase/php-jwt v6.0
+*   firebase/php-jwt v7.0
 
 <a id="apiReference"></a>
 ## API Reference
